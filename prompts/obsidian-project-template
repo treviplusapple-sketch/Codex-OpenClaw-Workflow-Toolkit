@@ -1,0 +1,82 @@
+## `prompts/obsidian-project-template.md`
+
+```md
+# Obsidian Project Template
+
+A reusable prompt template for organizing an Obsidian vault like a lightweight project management system.
+
+## Purpose
+
+This template helps users convert scattered notes into a structured Obsidian project space.
+
+It is designed for:
+
+- Writing projects
+- Fitness plans
+- Voice training logs
+- Coding projects
+- Research notes
+- Personal knowledge bases
+- Recurring routines
+
+## Template
+
+```text
+I want to organize this topic as an Obsidian project.
+
+Project topic:
+[Describe the project.]
+
+Current problem:
+[Explain what feels messy, hard to find, or hard to maintain.]
+
+My goals:
+[List the outcomes I want from this vault or folder.]
+
+Please create:
+
+1. Folder structure
+2. Core notes
+3. Index note
+4. Daily or weekly log template
+5. Progress tracking template
+6. Tags
+7. Suggested links between notes
+8. Maintenance routine
+
+Constraints:
+- Keep the system lightweight.
+- Avoid overcomplicated databases.
+- Make it easy to use on mobile.
+- Prefer Markdown-friendly formatting.
+Recommended Folder Structure
+Project Name/
+├─ 00_Index.md
+├─ 01_Goals.md
+├─ 02_Resources.md
+├─ 03_Templates.md
+├─ 04_Logs/
+├─ 05_Outputs/
+└─ 99_Archive/
+Example Index Note
+# Project Index
+
+## Goal
+
+Describe the main goal of this project.
+
+## Current Focus
+
+- This week:
+- Next milestone:
+- Blockers:
+
+## Important Notes
+
+- [[01_Goals]]
+- [[02_Resources]]
+- [[03_Templates]]
+
+## Recent Logs
+
+- [[2026-06-01]]
