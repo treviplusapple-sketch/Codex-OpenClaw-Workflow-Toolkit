@@ -1,19 +1,80 @@
+prompts/codex-task-template.md
 # Codex Task Template
 
 A reusable template for turning maintenance tasks into clear Codex instructions.
 
-## Goal
+## Purpose
 
-Describe the goal of the task.
+This template helps maintainers describe a task in a structured way so Codex can work with less ambiguity.
 
-## Context
+It is designed for:
 
-Provide relevant repository, file, or workflow context.
+- Small bug fixes
+- Documentation edits
+- Refactoring tasks
+- Test updates
+- Repository cleanup
+- Release preparation
 
-## Instructions
+## Template
 
-List the exact steps Codex should follow.
+```text
+# Task
 
-## Expected Output
+Describe the exact task Codex should complete.
 
-Describe the final output format.
+# Context
+
+Explain the repository, related files, current behavior, and any important constraints.
+
+# Files to Inspect
+
+List files, directories, or patterns Codex should review first.
+
+# Instructions
+
+1. Read the relevant files.
+2. Identify the minimum safe change.
+3. Make the change.
+4. Update or add tests if needed.
+5. Summarize the change clearly.
+
+# Constraints
+
+- Do not rewrite unrelated code.
+- Preserve the existing style.
+- Avoid large architectural changes unless requested.
+- Explain any uncertainty before making assumptions.
+
+# Expected Output
+
+Provide:
+- A short summary of changes
+- Files modified
+- Tests added or updated
+- Any follow-up work
+Example
+# Task
+
+Update the release notes workflow documentation to include a checklist for maintainers.
+
+# Context
+
+This repository provides Codex/OpenClaw workflow templates for maintainers. The release notes guide currently explains the purpose but does not include a concrete checklist.
+
+# Files to Inspect
+
+- workflows/release-notes.md
+- docs/roadmap.md
+
+# Instructions
+
+Add a practical checklist that maintainers can follow before publishing a release.
+
+# Constraints
+
+Keep the document concise and beginner-friendly.
+
+# Expected Output
+
+Summarize the documentation changes and mention any sections added.
